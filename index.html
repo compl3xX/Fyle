@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Fyle</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="input_container">
+        <div class="tooltip_container">
+          <label>Enter gross annual income *</label>
+          <span class="tooltip">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0xMiAwYzYuNjIzIDAgMTIgNS4zNzcgMTIgMTJzLTUuMzc3IDEyLTEyIDEyLTEyLTUuMzc3LTEyLTEyIDUuMzc3LTEyIDEyLTEyem0wIDFjNi4wNzEgMCAxMSA0LjkyOSAxMSAxMXMtNC45MjkgMTEtMTEgMTEtMTEtNC45MjktMTEtMTEgNC45MjktMTEgMTEtMTF6bS4wNTMgMTdjLjQ2NiAwIC44NDQtLjM3OC44NDQtLjg0NSAwLS40NjYtLjM3OC0uODQ0LS44NDQtLjg0NC0uNDY2IDAtLjg0NS4zNzgtLjg0NS44NDQgMCAuNDY3LjM3OS44NDUuODQ1Ljg0NXptLjQ2OC0yLjgyMmgtLjk5OGMtLjAzNS0xLjE2Mi4xODItMi4wNTQuOTM5LTIuOTQzLjQ5MS0uNTcgMS42MDctMS40NzkgMS45NDUtMi4wNTguNzIyLTEuMjI5LjA3Ny0zLjE3Ny0yLjI3MS0zLjE3Ny0xLjQzOSAwLTIuNjE1Ljg3Ny0yLjkyOCAyLjUwN2wtMS4wMTgtLjEwMmMuMjgtMi4yMzYgMS45NTgtMy40MDUgMy45MjItMy40MDUgMS45NjQgMCAzLjYxNSAxLjI1IDMuNjE1IDMuMjIgMCAxLjgwNi0xLjgyNiAyLjc4Mi0yLjYzOCAzLjg2OC0uNDIyLjU2My0uNTU1IDEuMzc3LS41NjggMi4wOXoiLz48L3N2Zz4="
+            />
+            <span class="tooltiptext">
+              Gross annual income is your salary in a year before any deductions
+            </span>
+          </span>
+        </div>
+        <input
+          id="annual_income"
+          placeholder="Enter gross annual income"
+        />
+        <div class="tooltip_container">
+          <span class="tooltip_error">
+            <span id="errorIcon1" class="error-icon">&#9888</span>
+            <span class="tooltiptext_error" id="icon1_err">
+             Please enter numbers only
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="input_container">
+        <div class="tooltip_container">
+          <label>Enter extra income *</label>
+          <span class="tooltip">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0xMiAwYzYuNjIzIDAgMTIgNS4zNzcgMTIgMTJzLTUuMzc3IDEyLTEyIDEyLTEyLTUuMzc3LTEyLTEyIDUuMzc3LTEyIDEyLTEyem0wIDFjNi4wNzEgMCAxMSA0LjkyOSAxMSAxMXMtNC45MjkgMTEtMTEgMTEtMTEtNC45MjktMTEtMTEgNC45MjktMTEgMTEtMTF6bS4wNTMgMTdjLjQ2NiAwIC44NDQtLjM3OC44NDQtLjg0NSAwLS40NjYtLjM3OC0uODQ0LS44NDQtLjg0NC0uNDY2IDAtLjg0NS4zNzgtLjg0NS44NDQgMCAuNDY3LjM3OS44NDUuODQ1Ljg0NXptLjQ2OC0yLjgyMmgtLjk5OGMtLjAzNS0xLjE2Mi4xODItMi4wNTQuOTM5LTIuOTQzLjQ5MS0uNTcgMS42MDctMS40NzkgMS45NDUtMi4wNTguNzIyLTEuMjI5LjA3Ny0zLjE3Ny0yLjI3MS0zLjE3Ny0xLjQzOSAwLTIuNjE1Ljg3Ny0yLjkyOCAyLjUwN2wtMS4wMTgtLjEwMmMuMjgtMi4yMzYgMS45NTgtMy40MDUgMy45MjItMy40MDUgMS45NjQgMCAzLjYxNSAxLjI1IDMuNjE1IDMuMjIgMCAxLjgwNi0xLjgyNiAyLjc4Mi0yLjYzOCAzLjg2OC0uNDIyLjU2My0uNTU1IDEuMzc3LS41NjggMi4wOXoiLz48L3N2Zz4="
+            />
+            <span class="tooltiptext" >
+              Income from other sources
+            </span>
+          </span>
+        </div>
+        <input
+          id="extra_income"
+          placeholder="Enter extra income from other sources"
+        />
+        <div class="tooltip_container">
+          <span class="tooltip_error">
+            <span id="errorIcon2" class="error-icon">&#9888</span>
+            <span class="tooltiptext_error" id="icon2_err">
+              Please enter numbers only
+            </span>
+          </span>
+        </div>
+      </div>
+
+      <div class="input_container">
+        <div class="tooltip_container">
+          <label>Enter age group *</label>
+          <span class="tooltip">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0xMiAwYzYuNjIzIDAgMTIgNS4zNzcgMTIgMTJzLTUuMzc3IDEyLTEyIDEyLTEyLTUuMzc3LTEyLTEyIDUuMzc3LTEyIDEyLTEyem0wIDFjNi4wNzEgMCAxMSA0LjkyOSAxMSAxMXMtNC45MjkgMTEtMTEgMTEtMTEtNC45MjktMTEtMTEgNC45MjktMTEgMTEtMTF6bS4wNTMgMTdjLjQ2NiAwIC44NDQtLjM3OC44NDQtLjg0NSAwLS40NjYtLjM3OC0uODQ0LS44NDQtLjg0NC0uNDY2IDAtLjg0NS4zNzgtLjg0NS44NDQgMCAuNDY3LjM3OS44NDUuODQ1Ljg0NXptLjQ2OC0yLjgyMmgtLjk5OGMtLjAzNS0xLjE2Mi4xODItMi4wNTQuOTM5LTIuOTQzLjQ5MS0uNTcgMS42MDctMS40NzkgMS45NDUtMi4wNTguNzIyLTEuMjI5LjA3Ny0zLjE3Ny0yLjI3MS0zLjE3Ny0xLjQzOSAwLTIuNjE1Ljg3Ny0yLjkyOCAyLjUwN2wtMS4wMTgtLjEwMmMuMjgtMi4yMzYgMS45NTgtMy40MDUgMy45MjItMy40MDUgMS45NjQgMCAzLjYxNSAxLjI1IDMuNjE1IDMuMjIgMCAxLjgwNi0xLjgyNiAyLjc4Mi0yLjYzOCAzLjg2OC0uNDIyLjU2My0uNTU1IDEuMzc3LS41NjggMi4wOXoiLz48L3N2Zz4="
+            />
+            <span class="tooltiptext">
+              According to legal age select age group your age falls in 
+            </span>
+          </span>
+        </div>
+        <select name="age_group" id="age_group">
+          <option value="1">&#8804 40</option>
+          <option value="2">> 40 and < 60</option>
+          <option value="3">&#8805  60</option>
+        </select>
+      </div>
+       <div class="input_container">
+        <div class="tooltip_container">
+          <label>Enter total applicable deductions *</label>
+          <span class="tooltip">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0xMiAwYzYuNjIzIDAgMTIgNS4zNzcgMTIgMTJzLTUuMzc3IDEyLTEyIDEyLTEyLTUuMzc3LTEyLTEyIDUuMzc3LTEyIDEyLTEyem0wIDFjNi4wNzEgMCAxMSA0LjkyOSAxMSAxMXMtNC45MjkgMTEtMTEgMTEtMTEtNC45MjktMTEtMTEgNC45MjktMTEgMTEtMTF6bS4wNTMgMTdjLjQ2NiAwIC44NDQtLjM3OC44NDQtLjg0NSAwLS40NjYtLjM3OC0uODQ0LS44NDQtLjg0NC0uNDY2IDAtLjg0NS4zNzgtLjg0NS44NDQgMCAuNDY3LjM3OS44NDUuODQ1Ljg0NXptLjQ2OC0yLjgyMmgtLjk5OGMtLjAzNS0xLjE2Mi4xODItMi4wNTQuOTM5LTIuOTQzLjQ5MS0uNTcgMS42MDctMS40NzkgMS45NDUtMi4wNTguNzIyLTEuMjI5LjA3Ny0zLjE3Ny0yLjI3MS0zLjE3Ny0xLjQzOSAwLTIuNjE1Ljg3Ny0yLjkyOCAyLjUwN2wtMS4wMTgtLjEwMmMuMjgtMi4yMzYgMS45NTgtMy40MDUgMy45MjItMy40MDUgMS45NjQgMCAzLjYxNSAxLjI1IDMuNjE1IDMuMjIgMCAxLjgwNi0xLjgyNiAyLjc4Mi0yLjYzOCAzLjg2OC0uNDIyLjU2My0uNTU1IDEuMzc3LS41NjggMi4wOXoiLz48L3N2Zz4="
+            />
+            <span class="tooltiptext">
+            Expense or allowance that you can subtract from your taxable income
+            </span>
+          </span>
+        </div>
+        <input
+          id="deduction"
+          placeholder="Enter total applicable deductions"
+        />
+        <div class="tooltip_container">
+          <span class="tooltip_error">
+            <span id="errorIcon3" class="error-icon">&#9888</span>
+            <span class="tooltiptext_error" id="icon3_err">
+              Please enter numbers only
+            </span>
+          </span>
+        </div>
+      </div>
+      <button class="custom_btn" id="submit">Submit</button>
+    </div>
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <div class="sub-modal-content">
+        <h2>Your overall income will be</h2>
+        <p id="taxToPay">Some content goes here.</p>
+        <p>after tax deductions</p>
+      </div>
+        <button class="custom_btn" id="closeModalButton">Close</button>
+    </div>
+    <script type="module" src="./logic.js" async defer></script>
+  </body>
+</html>
