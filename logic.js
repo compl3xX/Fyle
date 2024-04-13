@@ -53,7 +53,7 @@ function intialize() {
 }
 
 function isTaxApplicable(overall_income) {
-    return overall_income <= 8;
+    return (overall_income / 100000) <= 8;
 }
 
 function validateInput(field, err) {
@@ -74,6 +74,11 @@ function refersh() {
     age_group_input.value = 1
 }
 
+function showResult() {
+    modalBackdrop.style.visibility = 'visible';
+    modalContent.style.visibility = 'visible';
+}
+
 function calTax() {
 
     if (!intialize()) return;
@@ -86,7 +91,9 @@ function calTax() {
 
 
     if (isTaxApplicable(overall_income)) {
-        taxCal = 0;
+        taxToPay.textContent = overall_income;
+        showResult()
+        return;
     }
 
     else if (age_group < 40) taxCal = taxPercentage[age_group] * taxed_income
@@ -95,9 +102,7 @@ function calTax() {
 
     taxToPay.textContent = overall_income - taxCal * 100000;
 
-    modalBackdrop.style.visibility = 'visible';
-
-    modalContent.style.visibility = 'visible';
+    showResult()
 
 }
 
