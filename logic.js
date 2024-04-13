@@ -67,6 +67,13 @@ function validateInput(field, err) {
 
 }
 
+function refersh() {
+    annual_income_input.value = ""
+    extra_income_input.value = ""
+    deduction_input.value = ""
+    age_group_input.value = 1
+}
+
 function calTax() {
 
     if (!intialize()) return;
@@ -112,6 +119,7 @@ deduction_input.addEventListener('input', function () {
 closeModalButton.addEventListener('click', () => {
     modalBackdrop.style.visibility = 'hidden';
     modalContent.style.visibility = 'hidden';
+    refersh()
 });
 
 
